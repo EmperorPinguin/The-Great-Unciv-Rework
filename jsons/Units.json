@@ -251,7 +251,7 @@
 	{
 		"name": "War Chariot",
 		"unitType": "Mounted",
-		"movement": 4,
+		"movement": 3,
 		"strength": 11,
 		"cost": 50,
 		"requiredTech": "The Wheel",
@@ -259,7 +259,7 @@
 		"upgradesTo": "Horseman",
 		"obsoleteTech": "Horseback Riding",
 		"uniques": ["No defensive terrain bonus", "Rough terrain penalty", "[-33]% Strength <vs cities> <when attacking>"],
-		"attackSound": "nonmetalhit"
+		"attackSound": "metalhit"
 	},
 	{
 		"name": "Horde",
@@ -284,7 +284,7 @@
 		"uniqueTo": "Egypt",
 		"range": 1,
 		"replaces": "War Chariot",
-		"movement": 5,
+		"movement": 4,
 		"strength": 8,
 		"rangedStrength": 12,
 		"cost": 50,
@@ -296,17 +296,20 @@
 		"attackSound": "arrow"
 	},
 	{
-		"name": "War Cart",
+		"name": "Heavy Chariot",
 		"unitType": "Mounted",
-		"uniqueTo": "Sumeria",
+		"uniqueTo": "The Hittites",
 		"replaces": "War Chariot",
-		"movement": 4,
+		"movement": 3,
 		"strength": 11,
 		"cost": 50,
+		"requiredTech": "The Wheel",
+		"requiredResource": "Horses",
 		"upgradesTo": "Horseman",
 		"obsoleteTech": "Horseback Riding",
-		"uniques": ["No defensive terrain bonus", "Rough terrain penalty", "[-33]% Strength <vs cities> <when attacking>", "Ignores Zone of Control"],
-		"attackSound": "nonmetalhit"
+		"uniques": ["No defensive terrain bonus", "Rough terrain penalty", "[-33]% Strength <vs cities> <when attacking>"],
+		"promotions": ["Charge"],
+		"attackSound": "metalhit"
 	},
 	{
 		"name": "Horse Archer",
@@ -352,6 +355,20 @@
 		"obsoleteTech": "Civil Service",
 		"upgradesTo": "Pikeman",
 		"uniques": ["[+50]% Strength <vs [Mounted] units>"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Aga-ush",
+		"unitType": "Sword",
+		"replaces": "Spearman",
+		"uniqueTo": "Sumeria",
+		"movement": 2,
+		"strength": 11,
+		"cost": 35,
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Civil Service",
+		"upgradesTo": "Pikeman",
+		"uniques": ["[+50]% Strength <vs [Mounted] units>", "[+10]% Strength <when adjacent to a [Aga-ush] unit>"],
 		"attackSound": "metalhit"
 	},
 	{
